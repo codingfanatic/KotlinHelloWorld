@@ -12,7 +12,28 @@ fun main(){
 }
 
 fun printCakeCandles(age: Int){
-    
+    /*
+    Create a function, printCakeCandles() that takes one argument, 
+    age, of type Int.
+    Inside, use a repeat() statement to print one comma 
+    for the flame. Repeat this age times.
+    At the end, print an empty line.
+    Add a print() statement to print one space for insetting 
+    the candles.
+    Below, repeat the steps to create a second repeat() statement 
+    to print the candle bodies with a vertical line |.
+     */
+    print(" ")
+     repeat(age){
+         print(",")
+     }
+     println()
+
+    print(" ")
+     repeat(age){
+         print("|")
+     }
+     println()
 }
 
 fun printCakeTop(age: Int){
@@ -30,5 +51,14 @@ fun printCakeTop(age: Int){
 }
 
 fun printCakeBottom(age: Int, layers: Int){
-
+    /*
+    The cake width is age + 2
+    The cake height is the number of layers
+     */
+     repeat(layers){
+         repeat(age + 2){
+             print("@")
+         }
+         println()
+     }
 }
